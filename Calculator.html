@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <link rel="stylesheet" href="calculator.css"> 
+   
+
+     <!-- font-family: Roboto,HelveticaNeue,Arial,sans-serif;
+    font-size: small;       -->
+</head>
+
+<body>
+     <h1 id="heading">Calculator App</h1>
+     <form id="formsetting" name="ANS">
+          <input type="text" id="ans" ><br>
+          <button class="operator" onclick="ANS.ans.value+='+'; return false; ">+</button>
+          <button class="operator" onclick="ANS.ans.value+='-'; return false; ">-</button>
+          <button class="operator" onclick="ANS.ans.value+='*'; return false; ">*</button>
+          <button class="operator" onclick="ANS.ans.value+='/'; return false; ">/</button>
+          <br>
+          <div class="container">
+<div>
+
+          <button class="resize" onclick="ANS.ans.value+='7'; return false; "> 7 </button>
+          <button class="resize" onclick="ANS.ans.value+='8'; return false; ">8</button>
+          <button class="resize" onclick="ANS.ans.value+='9'; return false; ">9</button>
+          <br>
+          <button class="resize" onclick="ANS.ans.value+='4'; return false; ">4</button>
+          <button class="resize" onclick="ANS.ans.value+='5'; return false; ">5</button>
+          <button class="resize" onclick="ANS.ans.value+='6'; return false; ">6</button>
+          <br>
+          <button class="resize" onclick="ANS.ans.value+='1'; return false; ">1</button>
+          <button class="resize" onclick="ANS.ans.value+='2'; return false; ">2</button>
+          <button class="resize" onclick="ANS.ans.value+='3'; return false; ">3</button>
+          <br>
+          <button class="resize" onclick="ANS.ans.value+='0'; return false; ">0</button>
+          <button class="resize" onclick="ANS.ans.value+='.'; return false; ">.</button>
+          <button class="AC" onclick="Ans.ans.value='';return false;">AC</button>
+</div>
+
+<div>
+     <button id="resizeequal" onclick="ANS.ans.value=eval(ANS.ans.value); return false;">=</button>
+</div>
+</div>
+     </form>
+</body>
+</html>
